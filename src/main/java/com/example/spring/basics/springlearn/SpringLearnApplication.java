@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringLearnApplication {
 
 	public static void main(String[] args) {
-		BinarySearchImpl bs=new BinarySearchImpl();
+		BinarySearchImpl bs=new BinarySearchImpl(new QuickSortAlgorithm());
 		int res=bs.binarySearch(new int[] {2,4,5,6}, 5);
 		System.out.println(res);
 		
